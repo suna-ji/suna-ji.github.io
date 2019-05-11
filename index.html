@@ -1,5 +1,5 @@
 <!--여기서 이제 django 에서 갖고 있는 static 들을 로드 해줄 겁니다.-->
-{% load staticfiles %}
+<!--{% load staticfiles %}-->
 <!-- 이게 로드해주는 태그입니다. 이걸 안해주면 html에서 static 들을 못 찾아와요 !! -->
 
 <!DOCTYPE html>
@@ -27,7 +27,7 @@
   <!--어썸폰트 추가-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom styles for this template -->
-  <link href= "css/agency.min.css"  rel="stylesheet">
+  <link href= 'static/css/agency.min.css'  rel="stylesheet">
   
 
 </head>
@@ -86,7 +86,7 @@
           <ul class="timeline">
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" progid:"DXImageTransform.Microsoft.BasicImage(rotation=1)" src='img/history/1997.jpeg' alt="1997이미지 입니다."><!--alt는 이미지 대안-->
+                <img class="rounded-circle img-fluid" progid:"DXImageTransform.Microsoft.BasicImage(rotation=1)" src='static/img/history/1997.jpeg' alt="1997이미지 입니다."><!--alt는 이미지 대안-->
               </div>
               <div class="timeline-panel"><!--사진옆에 설명-->
                 <div class="timeline-heading">
@@ -100,7 +100,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src='img/history/2002.jpeg' alt="2002이미지 입니다.">
+                <img class="rounded-circle img-fluid" src='static/img/history/2002.jpeg' alt="2002이미지 입니다.">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -114,7 +114,7 @@
             </li>
             <li>
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src= 'img/history/2016.jpg'  alt="2016이미지 입니다.">
+                <img class="rounded-circle img-fluid" src= 'static/img/history/2016.jpg'  alt="2016이미지 입니다.">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -128,7 +128,7 @@
             </li>
             <li class="timeline-inverted">
               <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src='img/history/2018.jpeg' alt="2018이미지 입니다.">
+                <img class="rounded-circle img-fluid" src='static/img/history/2018.jpeg' alt="2018이미지 입니다.">
               </div>
               <div class="timeline-panel">
                 <div class="timeline-heading">
@@ -174,16 +174,16 @@
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img class="img-fluid" src='img/award/movie2.jpg'  width="150" alt="인셉션 포스터 입니다.">
+          <img class="img-fluid" src='static/img/award/movie2.jpg'  width="150" alt="인셉션 포스터 입니다.">
           <!--height로는 크기조절 안되고 width로만 조절된다->이유-->
           <h4 class="service-heading">2위<br>인셉션</h4>
         </div>
         <div class="col-md-4">
-          <img class="img-fluid" src= 'img/award/movie1.jpg' width="150" alt="포레스트 검프 포스터 입니다.">
+          <img class="img-fluid" src= 'static/img/award/movie1.jpg' width="150" alt="포레스트 검프 포스터 입니다.">
           <h4 class="service-heading">1위<br>포레스트 검프</h4>
         </div>
         <div class="col-md-4">
-          <img class="img-fluid" src= 'img/award/movie3.jpg' width="150" alt="노트북 포스터 입니다.">
+          <img class="img-fluid" src= 'static/img/award/movie3.jpg' width="150" alt="노트북 포스터 입니다.">
           <h4 class="service-heading">3위<br>노트북</h4>
           </div>
       </div>
@@ -197,16 +197,16 @@
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img class="img-fluid" src= 'img/ice/ice2.png'  width="200" alt="사랑에 빠진 딸기입니다.">
+          <img class="img-fluid" src= 'static/img/ice/ice2.png'  width="200" alt="사랑에 빠진 딸기입니다.">
           <!--height로는 크기조절 안되고 width로만 조절된다->이유: img-fluid-->
           <h4 class="service-heading">2위<br>사랑에 빠진 딸기</h4>
         </div>
         <div class="col-md-4">
-          <img class="img-fluid" src= 'img/ice/ice1.png'  width="200" alt="민트초코칩 입니다.">
+          <img class="img-fluid" src= 'static/img/ice/ice1.png'  width="200" alt="민트초코칩 입니다.">
           <h4 class="service-heading">1위<br>민트초코칩</h4>
         </div>
         <div class="col-md-4">
-          <img class="img-fluid" src= 'img/ice/ice3.png'  width="200" alt="그린티 입니다.">
+          <img class="img-fluid" src= 'static/img/ice/ice3.png'  width="200" alt="그린티 입니다.">
           <h4 class="service-heading">3위<br>그린티</h4>
           </div>
       </div>
@@ -220,16 +220,16 @@
       </div>
       <div class="row text-center">
         <div class="col-md-4">
-          <img src= 'img/res/res2.jpg'  width="200" height="200" alt="피막치골 춘자">
+          <img src= 'static/img/res/res2.jpg'  width="200" height="200" alt="피막치골 춘자">
           <!--height로는 크기조절 안되고 width로만 조절된다->이유-->
           <h4 class="service-heading">2위<br>피막치골 춘자</h4>
         </div>
         <div class="col-md-4">
-          <img  src= 'img/res/res1.jpg' width="200" height="200" alt="복향원">
+          <img  src= 'static/img/res/res1.jpg' width="200" height="200" alt="복향원">
           <h4 class="service-heading">1위<br>복향원</h4>
         </div>
         <div class="col-md-4">
-          <img src= 'img/res/res3.jpg'  width="200" height="200" alt="필동 닭칼국수">
+          <img src= 'static/img/res/res3.jpg'  width="200" height="200" alt="필동 닭칼국수">
           <h4 class="service-heading">3위<br>필동 닭칼국수</h4>
           </div>
       </div>
@@ -258,7 +258,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src= 'img/test/test1_half.jpg'  alt="생굴">
+            <img class="img-fluid" src= 'static/img/test/test1_half.jpg'  alt="생굴">
           </a>
           <div class="portfolio-caption">
             <h4>생굴</h4>
@@ -272,7 +272,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src= 'img/test/test2_half.jpg'  alt="육회">
+            <img class="img-fluid" src= 'static/img/test/test2_half.jpg'  alt="육회">
           </a>
           <div class="portfolio-caption">
             <h4>육회</h4>
@@ -286,7 +286,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src= 'img/test/test3_half.jpg'  alt="간장게장">
+            <img class="img-fluid" src= 'static/img/test/test3_half.jpg'  alt="간장게장">
           </a>
           <div class="portfolio-caption">
             <h4>간장게장</h4>
@@ -299,7 +299,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src= 'img/test/test4_half.jpg' alt="오이">
+            <img class="img-fluid" src= 'static/img/test/test4_half.jpg' alt="오이">
           </a>
           <div class="portfolio-caption">
             <h4>오이</h4>
@@ -312,7 +312,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src= 'img/test/test5_half.jpg' alt="고수">
+            <img class="img-fluid" src= 'static/img/test/test5_half.jpg' alt="고수">
           </a>
           <div class="portfolio-caption">
             <h4>고수</h4>
@@ -325,7 +325,7 @@
                 <i class="fas fa-plus fa-3x"></i>
               </div>
             </div>
-            <img class="img-fluid" src= 'img/test/test6_half.jpg' alt="탄산수">
+            <img class="img-fluid" src= 'static/img/test/test6_half.jpg' alt="탄산수">
           </a>
           <div class="portfolio-caption">
             <h4>탄산수</h4>
@@ -346,7 +346,7 @@
           <h2 class="section-subheading text-muted">도비</h2>
           <!--모달 이미지 버튼-->
             <a class="portfolio-link" data-toggle="modal" href="#basicExample">
-              <img class="img-fluid" src='img/doby/doby_modal.jpeg' alt="도비">
+              <img class="img-fluid" src='static/img/doby/doby_modal.jpeg' alt="도비">
             </a>
         </div>
         <!--모달 캐러셀-->
@@ -361,16 +361,16 @@
             </ol>
             <div class="carousel-inner" role="listbox">
              <div class="carousel-item active">
-              <img class="d-block w-500" src= 'img/doby/doby1.jpeg' alt="First slide">
+              <img class="d-block w-500" src= 'static/img/doby/doby1.jpeg' alt="First slide">
              </div>
              <div class="carousel-item">
-              <img class="d-block w-500" src= 'img/doby/doby2.jpeg' alt="Second slide">
+              <img class="d-block w-500" src= 'static/img/doby/doby2.jpeg' alt="Second slide">
              </div>
              <div class="carousel-item">
-              <img class="d-block w-500" src= 'img/doby/doby3.jpeg' alt="Third slide">
+              <img class="d-block w-500" src= 'static/img/doby/doby3.jpeg' alt="Third slide">
              </div>
              <div class="carousel-item">
-              <img class="d-block w-500" src= 'img/doby/doby4.jpeg' alt="fourth slide">
+              <img class="d-block w-500" src= 'static/img/doby/doby4.jpeg' alt="fourth slide">
              </div>
             </div>
             <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
@@ -395,22 +395,22 @@
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <a href="https://ko-kr.facebook.com/DGUlion/" target="_blank">
-            <img class="img-fluid d-block mx-auto" src= 'img/logos/com1.png' alt="멋사">
+            <img class="img-fluid d-block mx-auto" src= 'static/img/logos/com1.png' alt="멋사">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="http://www.dongguk.edu/mbs/kr/index.jsp" target="_blank">
-            <img class="img-fluid d-block mx-auto" src= 'img/logos/com2.jpg' alt="동국대">
+            <img class="img-fluid d-block mx-auto" src= 'static/img/logos/com2.jpg' alt="동국대">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="https://www.w3schools.com/default.asp" target="_blank">
-            <img class="img-fluid d-block mx-auto" src='img/logos/com3.jpg' alt="w3school">
+            <img class="img-fluid d-block mx-auto" src='static/img/logos/com3.jpg' alt="w3school">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="http://bootstrap4.kr/" target="_blank">
-            <img class="img-fluid d-block mx-auto" src= 'img/logos/com4.jpg' alt="bootstrap">
+            <img class="img-fluid d-block mx-auto" src= 'static/img/logos/com4.jpg' alt="bootstrap">
           </a>
         </div>
       </div>
@@ -580,18 +580,18 @@
   </script>
 
   <!-- Bootstrap core JavaScript -->
-  <script src= 'vendor/jquery/jquery.min.js'></script>
-  <script src= 'vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
+  <script src= 'static/vendor/jquery/jquery.min.js'></script>
+  <script src= 'static/vendor/bootstrap/js/bootstrap.bundle.min.js'></script>
 
   <!-- Plugin JavaScript -->
-  <script src= 'vendor/jquery-easing/jquery.easing.min.js'></script>
+  <script src= 'static/vendor/jquery-easing/jquery.easing.min.js'></script>
 
   <!-- Contact form JavaScript -->
-  <script src='js/jqBootstrapValidation.js'></script>
-  <script src='js/contact_me.js'></script>
+  <script src='static/js/jqBootstrapValidation.js'></script>
+  <script src='static/js/contact_me.js'></script>
 
   <!-- Custom scripts for this template -->
-  <script src= 'js/agency.min.js'></script>
+  <script src= 'static/js/agency.min.js'></script>
 
 </body>
 
